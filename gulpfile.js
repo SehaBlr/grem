@@ -98,22 +98,19 @@ function watching() {
 
 
 function cleanDist() {
-  return src('dist')
+  return src('docs')
     .pipe(clean())
 }
 
 function building() {
   return src([
     'app/css/style.min.css',
-    '!app/images/**/*.html',
     'app/images/*.*',
-    '!app/images/*.svg',
-    'app/images/sprite.svg',
     'app/fonts/*.*',
     'app/js/main.min.js',
-    'app/**/*.html'
+    'app/*.html'
   ], {base : 'app'})
-    .pipe(dest('dist'))
+    .pipe(dest('docs'))
 }
 
 exports.styles = styles;

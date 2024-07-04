@@ -1,0 +1,75 @@
+@media(max-width:1440px){
+    .container{
+        margin-right: auto;
+  
+    }
+    .header{
+
+        &__lang{
+            display: none;
+        }
+        &__lang-tooltip{
+            display: none;
+        }
+        &__left{
+            display: none;
+        }
+    } 
+    
+.products {  
+      &__inner {
+        padding: 99px 60px 133px;
+      }
+    }
+    .geo {
+        &__inner {
+            padding: 0 60px;
+        }
+        &__legend-container {
+          width: 290px; 
+          height: 70px;
+        }
+        &__map-container {
+          width: 880px;
+          height: 472px;
+          margin: 0 auto;
+        }
+    }
+}
+
+
+@media(max-width:1020px){
+
+    .header{
+        &__inner{
+            justify-content: flex-end;
+        }
+        &__logo{
+            margin-right: auto;
+            order:-1;
+        }
+        &__menu{
+            order:-1;
+        }
+        &__btn{
+            margin-right: 0;
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+    }
+    .footer{
+        &__btn{
+            margin-left: auto;
+            margin-top: 20px;
+        }
+    }
+
+}
+
+@media(max-width:770px){
+    .header{
+        &__btn{
+            margin-left: auto;
+        }
+    }
+}

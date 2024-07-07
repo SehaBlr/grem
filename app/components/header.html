@@ -2,52 +2,61 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Группа компаний Гремячинский док</title>
-  <link rel="stylesheet" href="css/style.min.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Группа компаний Гремячинский док</title>
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">        
-        <a class="logo header__logo" href="#">
-          <img src="images/logo.svg" alt="logo">
-        </a>
-        <div class="header__left">
-          <ul class="header__menu">
-            <li class="header_menu-item">
-              <a class="header__menu-link" href="#">продукция</a>
-            </li>
-            <li class="header_menu-item">
-              <a class="header__menu-link" href="#">поставщикам</a>
-            </li>
-            <li class="header_menu-item">
-              <a class="header__menu-link" href="#">вакансии</a>
-            </li>
-            <li class="header_menu-item">
-              <a class="header__menu-link" href="#">новости</a>
-            </li>
-            <li class="header_menu-item">
-              <a class="header__menu-link" href="#">контакты</a>
-            </li>
-          </ul>
-          <a class="header__phone" href="tel:+73422500888">+7(375)250-08-88</a>
-          <a class="header__mailto" href="mailto:info@grdok.ru">info@grdok.ru</a>
-          <a class="header__lang" href="#">RU
-          </a>
-          <ul class="header__lang-tooltip" >
-            <li><a class="header__lang-item" href="#">RU</a></li>
-            <li><a class="header__lang-item" href="#">EN</a></li>
-            <li><a class="header__lang-item" href="#">FR</a></li>
-            <li><a class="header__lang-item" href="#">ES</a></li>
-            <li><a class="header__lang-item" href="#">CH</a></li>
-            
-          </ul>
-        </div>
+   <header class="header">
+      <div class="container">
+         <div class="header__inner">
+            <a class="logo header__logo" href="#">
+               <picture>
+                  <source media="(min-width: 1020px)" srcset="images/logo.svg">
+                  <img src="images/logo-sm.svg" alt="logo">
+               </picture>
+            </a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class="header__menu-button-container" for="menu-toggle">
+               <div class="header__menu-button"></div>
+            </label>
+            <ul class="header__left">
+               <li>
+                  <ul class="header__menu">
+                     <li class="header_menu-item">
+                        <a class="header__menu-link" href="#">продукция</a>
+                     </li>
+                     <li class="header_menu-item">
+                        <a class="header__menu-link" href="#">поставщикам</a>
+                     </li>
+                     <li class="header_menu-item">
+                        <a class="header__menu-link" href="#">вакансии</a>
+                     </li>
+                     <li class="header_menu-item">
+                        <a class="header__menu-link" href="#">новости</a>
+                     </li>
+                     <li class="header_menu-item">
+                        <a class="header__menu-link" href="#">контакты</a>
+                     </li>
+                  </ul>
+               </li>
+               <li><a class="header__phone" href="tel:+73422500888">+7(375)250-08-88</a></li>
+               <li><a class="header__mailto" href="mailto:info@grdok.ru">info@grdok.ru</a></li>
+               <li><a class="header__lang" href="#">RU</a></li>
+               <li>
+                  <ul class="header__lang-tooltip">
+                     <li><a class="header__lang-item header__lang-item_active" href="#">RU</a></li>
+                     <li><a class="header__lang-item" href="#">EN</a></li>
+                     <li><a class="header__lang-item" href="#">FR</a></li>
+                     <li><a class="header__lang-item" href="#">ES</a></li>
+                     <li><a class="header__lang-item" href="#">CH</a></li>
+                  </ul>
+               </li>
+            </ul>
 
+         </div>
       </div>
-    </div>
-  </header>
+   </header>
